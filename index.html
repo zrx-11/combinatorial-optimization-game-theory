@@ -469,15 +469,18 @@ function renderMermaid(){
   if(mermaidState==='loading') return;
   mermaidState='loading';
   const s=document.createElement('script');
-  /* MERMAID_LOCAL_PATCH */  s.src='assets/mermaid.min.js';
-  s.onload=()=>{ mermaidState='loaded'; run(); };
-  s.onerror=()=>{
+  /* MERMAID_LOCAL_PATCH */
+  const loadCdn=()=>{
+    if(window.mermaid){ mermaidState='loaded'; run(); return; }
     const c=document.createElement('script');
     c.src='https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js';
-    c.onload=()=>{ mermaidState='loaded'; run(); };
+    c.onload=()=>{ if(window.mermaid){ mermaidState='loaded'; run(); } else { mermaidState='failed'; } };
     c.onerror=()=>{ mermaidState='failed'; };
     document.head.appendChild(c);
   };
+  s.src='assets/mermaid.min.js';
+  s.onload=()=>{ if(window.mermaid){ mermaidState='loaded'; run(); } else { loadCdn(); } };
+  s.onerror=loadCdn;
   document.head.appendChild(s);
 }
 
