@@ -13,6 +13,7 @@
 ├── README.md                       本文件（部署与使用）
 ├── 交付说明.md                      交付清单、验证结论、取舍说明
 ├── .nojekyll                       GitHub Pages 关闭 Jekyll
+├── assets/mermaid.min.js           站内 Mermaid（离线/国内网络也能出图，CDN 仅作兜底）
 ├── 从零推导/                        4 个独立单文件交互页（KaTeX 全内联）
 │   ├── 01-单纯形法.html
 │   ├── 02-对偶.html
@@ -59,6 +60,7 @@ git push -u origin main
 
 - `.nojekyll` 必须在根目录。它关掉 Jekyll，否则中文目录名与以下划线开头的目录会被跳过。
 - 所有链接都是相对路径，仓库名变了也不用改代码。
+- Mermaid 走站内 `assets/mermaid.min.js`（单书伴侣自带一份 `mermaid.min.js`），断网也能渲染关系图；CDN 只在站内文件缺失时兜底。
 - 单个 HTML 约 650 KB（KaTeX 字体全内联），全站约 4.7 MB，远低于 Pages 的 1 GB 上限。
 
 ## 验证结论
@@ -71,5 +73,6 @@ git push -u origin main
 
 - 源 PDF 是扫描件（无文字层），OCR 只用于抓章节结构与定理编号；**书中的公式与数值例子一律用 Python 复算后重写**，不照抄 OCR 结果。
 - OCR 仍缺 30 页（PDF 108–135、269–270），对应第 4 章末与第 5 章开头部分、以及参考文献；这部分内容依据目录与上下文补齐，未逐字核对原页。
+- 重新生成 `index.html` 后要重跑 `_build/patch_deriv_links.py`（加"从零推导"入口）和 `_build/patch_mermaid_local.py`（改本地 Mermaid），两个脚本都是幂等的；漏跑第二个会让图区在离线/国内网络下空白。
 - 推导页里的例题是为教学自拟的（如 2×2 博弈、MST 与最短路网络），与原书数字不必一致。
 - 教材版权归原出版社与作者，本套材料为学习笔记性质，请勿商用分发。

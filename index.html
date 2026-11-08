@@ -469,9 +469,15 @@ function renderMermaid(){
   if(mermaidState==='loading') return;
   mermaidState='loading';
   const s=document.createElement('script');
-  s.src='https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js';
+  /* MERMAID_LOCAL_PATCH */  s.src='assets/mermaid.min.js';
   s.onload=()=>{ mermaidState='loaded'; run(); };
-  s.onerror=()=>{ mermaidState='failed'; };
+  s.onerror=()=>{
+    const c=document.createElement('script');
+    c.src='https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js';
+    c.onload=()=>{ mermaidState='loaded'; run(); };
+    c.onerror=()=>{ mermaidState='failed'; };
+    document.head.appendChild(c);
+  };
   document.head.appendChild(s);
 }
 

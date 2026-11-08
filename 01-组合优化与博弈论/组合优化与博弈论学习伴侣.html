@@ -312,7 +312,13 @@ $('#q').addEventListener('input', e=>{
 function renderMermaid(){
   if(!document.querySelector('.mermaid')) return;
   const s=document.createElement('script');
-  s.src='https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js';
+  /* MERMAID_LOCAL_PATCH */  s.src='mermaid.min.js';
+  s.onerror=()=>{
+    const c=document.createElement('script');
+    c.src='https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js';
+    c.onload=s.onload;
+    document.head.appendChild(c);
+  };
   s.onload=()=>{ try{
     mermaid.initialize({startOnLoad:false, theme: matchMedia('(prefers-color-scheme: dark)').matches?'dark':'default'});
     document.querySelectorAll('.mermaid').forEach(el=>{

@@ -17,12 +17,12 @@
  {
   "check": "combinatorial-optimization-and-game-theory 首章渲染",
   "pass": true,
-  "extra": "4450 字符"
+  "extra": "4229 字符"
  },
  {
   "check": "combinatorial-optimization-and-game-theory 末章渲染",
   "pass": true,
-  "extra": "7257 字符"
+  "extra": "7018 字符"
  },
  {
   "check": "combinatorial-optimization-and-game-theory 测验题数",
