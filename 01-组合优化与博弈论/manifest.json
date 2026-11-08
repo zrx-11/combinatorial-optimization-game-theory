@@ -1,0 +1,1004 @@
+{
+  "slug": "combinatorial-optimization-and-game-theory",
+  "title": "组合优化与博弈论",
+  "subtitle": "从线性规划到在线算法与博弈论：一套按结构判断难度的学习系统",
+  "book": {
+    "title": "组合优化与博弈论",
+    "author": "谈之奕、林凌",
+    "source": [
+      "组合优化与博弈论.pdf（浙江大学出版社，270 页扫描版）"
+    ]
+  },
+  "audience": "零基础到有基础的本科生",
+  "goal": "能独立把现实问题写成优化模型，判断其复杂度，选对算法并说明保证",
+  "learningPath": [
+    {
+      "step": "01",
+      "title": "导言：优化三件套",
+      "chapterIds": [
+        "ch00"
+      ],
+      "checkpoint": "能举一个局部最优不是全局最优的例子"
+    },
+    {
+      "step": "02",
+      "title": "线性规划与对偶",
+      "chapterIds": [
+        "ch01"
+      ],
+      "checkpoint": "手算单纯形表，得 x=(4,2)、值 14"
+    },
+    {
+      "step": "03",
+      "title": "运输与指派",
+      "chapterIds": [
+        "ch02"
+      ],
+      "checkpoint": "运输最优 43，指派最优 15"
+    },
+    {
+      "step": "04",
+      "title": "整数规划",
+      "chapterIds": [
+        "ch03"
+      ],
+      "checkpoint": "复算 −202.5、−198、−168 三个值"
+    },
+    {
+      "step": "05",
+      "title": "图与网络优化",
+      "chapterIds": [
+        "ch04"
+      ],
+      "checkpoint": "MST 总权 13，最大流 4"
+    },
+    {
+      "step": "06",
+      "title": "组合优化与复杂度",
+      "chapterIds": [
+        "ch05"
+      ],
+      "checkpoint": "能写一个归约的两步证明"
+    },
+    {
+      "step": "07",
+      "title": "排序与装箱",
+      "chapterIds": [
+        "ch06"
+      ],
+      "checkpoint": "LPT 得 12，Johnson 得 11"
+    },
+    {
+      "step": "08",
+      "title": "在线问题",
+      "chapterIds": [
+        "ch07"
+      ],
+      "checkpoint": "推出滑雪租赁 2 − 1/N"
+    },
+    {
+      "step": "09",
+      "title": "博弈论",
+      "chapterIds": [
+        "ch08"
+      ],
+      "checkpoint": "解出 2×2 博弈值 1/7"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "ch00",
+      "title": "第 0 章：导言",
+      "file": "chapters/ch00-导言.md",
+      "difficulty": 1
+    },
+    {
+      "id": "ch01",
+      "title": "第 1 章：线性规划",
+      "file": "chapters/ch01-线性规划.md",
+      "difficulty": 2
+    },
+    {
+      "id": "ch02",
+      "title": "第 2 章：运输与指派",
+      "file": "chapters/ch02-运输与指派.md",
+      "difficulty": 2
+    },
+    {
+      "id": "ch03",
+      "title": "第 3 章：整数规划",
+      "file": "chapters/ch03-整数规划.md",
+      "difficulty": 3
+    },
+    {
+      "id": "ch04",
+      "title": "第 4 章：图与网络优化",
+      "file": "chapters/ch04-图与网络优化.md",
+      "difficulty": 2
+    },
+    {
+      "id": "ch05",
+      "title": "第 5 章：组合优化",
+      "file": "chapters/ch05-组合优化.md",
+      "difficulty": 3
+    },
+    {
+      "id": "ch06",
+      "title": "第 6 章：排序与装箱",
+      "file": "chapters/ch06-排序与装箱.md",
+      "difficulty": 3
+    },
+    {
+      "id": "ch07",
+      "title": "第 7 章：在线问题",
+      "file": "chapters/ch07-在线问题.md",
+      "difficulty": 3
+    },
+    {
+      "id": "ch08",
+      "title": "第 8 章：博弈论",
+      "file": "chapters/ch08-博弈论.md",
+      "difficulty": 3
+    }
+  ],
+  "concepts": [
+    {
+      "id": "c01",
+      "title": "单纯形法",
+      "file": "concepts/c01-单纯形法.md",
+      "chapterIds": [
+        "ch01"
+      ]
+    },
+    {
+      "id": "c02",
+      "title": "对偶与影子价格",
+      "file": "concepts/c02-对偶与影子价格.md",
+      "chapterIds": [
+        "ch01",
+        "ch08"
+      ]
+    },
+    {
+      "id": "c03",
+      "title": "全么模与整数性",
+      "file": "concepts/c03-全么模与整数性.md",
+      "chapterIds": [
+        "ch02",
+        "ch03"
+      ]
+    },
+    {
+      "id": "c04",
+      "title": "割平面与分枝定界",
+      "file": "concepts/c04-割平面与分枝定界.md",
+      "chapterIds": [
+        "ch03"
+      ]
+    },
+    {
+      "id": "c05",
+      "title": "匹配与增广路",
+      "file": "concepts/c05-匹配与增广路.md",
+      "chapterIds": [
+        "ch02",
+        "ch04"
+      ]
+    },
+    {
+      "id": "c06",
+      "title": "最大流最小割",
+      "file": "concepts/c06-最大流最小割.md",
+      "chapterIds": [
+        "ch04"
+      ]
+    },
+    {
+      "id": "c07",
+      "title": "NP-完全与归约",
+      "file": "concepts/c07-NP完全与归约.md",
+      "chapterIds": [
+        "ch05",
+        "ch06"
+      ]
+    },
+    {
+      "id": "c08",
+      "title": "近似比与 PTAS",
+      "file": "concepts/c08-近似比与PTAS.md",
+      "chapterIds": [
+        "ch05",
+        "ch06"
+      ]
+    },
+    {
+      "id": "c09",
+      "title": "竞争比",
+      "file": "concepts/c09-竞争比.md",
+      "chapterIds": [
+        "ch07"
+      ]
+    },
+    {
+      "id": "c10",
+      "title": "Nash 均衡",
+      "file": "concepts/c10-Nash均衡.md",
+      "chapterIds": [
+        "ch08"
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "决策变量",
+      "def": "你能拍板决定的那个量",
+      "chapterId": "ch00"
+    },
+    {
+      "term": "目标函数",
+      "def": "你想让它变大或变小的那个数",
+      "chapterId": "ch00"
+    },
+    {
+      "term": "约束条件",
+      "def": "决策变量必须满足的限制",
+      "chapterId": "ch00"
+    },
+    {
+      "term": "可行解",
+      "def": "同时满足所有约束的一组取值",
+      "chapterId": "ch00"
+    },
+    {
+      "term": "可行域",
+      "def": "所有可行解组成的集合",
+      "chapterId": "ch00"
+    },
+    {
+      "term": "最优解",
+      "def": "可行域里让目标函数最好的一组取值",
+      "chapterId": "ch00"
+    },
+    {
+      "term": "最优值",
+      "def": "最优解对应的目标函数数值",
+      "chapterId": "ch00"
+    },
+    {
+      "term": "局部最优",
+      "def": "只比附近解好、全局未必最好的解",
+      "chapterId": "ch00"
+    },
+    {
+      "term": "标准形",
+      "def": "最大化、等式约束、变量非负的规范形式",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "基本可行解",
+      "def": "非基变量取 0 且所有变量非负的解",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "顶点",
+      "def": "可行域多面体的角点，对应一个基本可行解",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "检验数",
+      "def": "让某个非基变量增加 1 单位时目标的改善量",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "退化",
+      "def": "基本可行解里有基变量取值为 0",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "对偶问题",
+      "def": "与原 LP 共用数据、角色互换的影子问题",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "影子价格",
+      "def": "每多一单位资源时最优目标的增量",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "互补松弛",
+      "def": "变量为正则约束紧，约束松则变量为 0",
+      "chapterId": "ch01"
+    },
+    {
+      "term": "全么模",
+      "def": "所有方子阵行列式为 0 或正负 1 的矩阵",
+      "chapterId": "ch02"
+    },
+    {
+      "term": "位势",
+      "def": "运输问题里对偶变量的别称",
+      "chapterId": "ch02"
+    },
+    {
+      "term": "闭回路",
+      "def": "运输表里用于调整运量的闭合折线",
+      "chapterId": "ch02"
+    },
+    {
+      "term": "匈牙利算法",
+      "def": "求指派问题最优解的逐轮减补法",
+      "chapterId": "ch02"
+    },
+    {
+      "term": "稳定匹配",
+      "def": "不存在双方都想换的配对",
+      "chapterId": "ch02"
+    },
+    {
+      "term": "LP 松弛",
+      "def": "把整数约束放掉后得到的线性规划",
+      "chapterId": "ch03"
+    },
+    {
+      "term": "割平面",
+      "def": "只切掉分数顶点、保留所有整数解的约束",
+      "chapterId": "ch03"
+    },
+    {
+      "term": "分枝定界",
+      "def": "按变量范围劈开问题、用界剪枝的搜索",
+      "chapterId": "ch03"
+    },
+    {
+      "term": "整数间隙",
+      "def": "松弛最优值与整数最优值的差",
+      "chapterId": "ch03"
+    },
+    {
+      "term": "匹配",
+      "def": "点两两配对且不重复的边集",
+      "chapterId": "ch04"
+    },
+    {
+      "term": "增广路",
+      "def": "能通过翻转让匹配多一条的路",
+      "chapterId": "ch04"
+    },
+    {
+      "term": "最小生成树",
+      "def": "连通所有点且总权最小的树",
+      "chapterId": "ch04"
+    },
+    {
+      "term": "最大流",
+      "def": "从源到汇能送出的最大流量",
+      "chapterId": "ch04"
+    },
+    {
+      "term": "最小割",
+      "def": "把源汇分开所需切掉的最小容量",
+      "chapterId": "ch04"
+    },
+    {
+      "term": "残余网络",
+      "def": "记录每条边还能加多少、能撤多少的网络",
+      "chapterId": "ch04"
+    },
+    {
+      "term": "NP",
+      "def": "解能在多项式时间内被验证的问题类",
+      "chapterId": "ch05"
+    },
+    {
+      "term": "NP-完全",
+      "def": "NP 中最难的一类，所有 NP 问题都能归约到它",
+      "chapterId": "ch05"
+    },
+    {
+      "term": "NP-难",
+      "def": "所有 NP 问题都能归约到它，自身可不在 NP 内",
+      "chapterId": "ch05"
+    },
+    {
+      "term": "归约",
+      "def": "把 A 的实例改写成 B 的实例且答案一致",
+      "chapterId": "ch05"
+    },
+    {
+      "term": "强 NP-完全",
+      "def": "数值被规模的多项式界住的 NP-完全问题",
+      "chapterId": "ch05"
+    },
+    {
+      "term": "伪多项式算法",
+      "def": "运行时间依赖数值大小而非规模的算法",
+      "chapterId": "ch05"
+    },
+    {
+      "term": "近似比",
+      "def": "算法解与最优解之比的最坏上界",
+      "chapterId": "ch05"
+    },
+    {
+      "term": "PTAS",
+      "def": "任意精度、精度固定时多项式时间的算法族",
+      "chapterId": "ch05"
+    },
+    {
+      "term": "FPTAS",
+      "def": "对精度倒数值也是多项式的 PTAS",
+      "chapterId": "ch05"
+    },
+    {
+      "term": "三参数记法",
+      "def": "α 机器环境、β 工件特征、γ 目标函数",
+      "chapterId": "ch06"
+    },
+    {
+      "term": "makespan",
+      "def": "最大完工时间，最后一件完工的时刻",
+      "chapterId": "ch06"
+    },
+    {
+      "term": "交换论证",
+      "def": "交换相邻元素证明贪心最优的手法",
+      "chapterId": "ch06"
+    },
+    {
+      "term": "渐进近似比",
+      "def": "只在大实例上趋于常数的近似保证",
+      "chapterId": "ch06"
+    },
+    {
+      "term": "在线算法",
+      "def": "输入未知、必须立即决策且不可反悔的算法",
+      "chapterId": "ch07"
+    },
+    {
+      "term": "竞争比",
+      "def": "在线算法花费与离线最优之比的上确界",
+      "chapterId": "ch07"
+    },
+    {
+      "term": "半在线",
+      "def": "已知部分未来信息的在线问题",
+      "chapterId": "ch07"
+    },
+    {
+      "term": "缓存置换",
+      "def": "缓存满时决定踢掉哪一页的规则",
+      "chapterId": "ch07"
+    },
+    {
+      "term": "k-server",
+      "def": "k 台服务器移动去服务请求点的问题",
+      "chapterId": "ch07"
+    },
+    {
+      "term": "零和博弈",
+      "def": "一方所得恰为另一方所失的博弈",
+      "chapterId": "ch08"
+    },
+    {
+      "term": "鞍点",
+      "def": "既是行最小、又是列最大的元素",
+      "chapterId": "ch08"
+    },
+    {
+      "term": "混合策略",
+      "def": "按概率分布选择策略的做法",
+      "chapterId": "ch08"
+    },
+    {
+      "term": "Nash 均衡",
+      "def": "没人能单方面改变策略而获益的局势",
+      "chapterId": "ch08"
+    },
+    {
+      "term": "最优反应",
+      "def": "别人策略固定时自己的最佳选择",
+      "chapterId": "ch08"
+    },
+    {
+      "term": "无政府代价",
+      "def": "最坏均衡的社会福利与最优之比",
+      "chapterId": "ch08"
+    },
+    {
+      "term": "谈判解",
+      "def": "最大化双方增量乘积的分配方案",
+      "chapterId": "ch08"
+    }
+  ],
+  "patterns": {
+    "file": "patterns.md"
+  },
+  "cheatsheet": {
+    "file": "cheatsheet.md"
+  },
+  "quizzes": [
+    {
+      "id": "q01",
+      "chapterId": "ch00",
+      "type": "single",
+      "question": "一个优化问题的三件套是",
+      "options": [
+        "变量、数据、结果",
+        "决策变量、目标函数、约束条件",
+        "模型、算法、程序",
+        "输入、处理、输出"
+      ],
+      "answer": 1,
+      "explain": "三件套回答：能决定什么、好在哪、不能违反什么。"
+    },
+    {
+      "id": "q02",
+      "chapterId": "ch00",
+      "type": "blank",
+      "question": "比附近所有解都好、但全局还有更好解的那个解，叫______。",
+      "answer": "局部最优解",
+      "explain": "局部最优只看邻域，登山式搜索可能停在半山腰。"
+    },
+    {
+      "id": "q03",
+      "chapterId": "ch01",
+      "type": "single",
+      "question": "单纯形法每一步做的事是",
+      "options": [
+        "在可行域内部随机取点",
+        "沿边从当前顶点走到相邻顶点",
+        "把约束全部删掉",
+        "用启发式搜索"
+      ],
+      "answer": 1,
+      "explain": "顶点对应基本可行解，单纯形法在顶点间沿边移动，直到所有检验数不大于 0。"
+    },
+    {
+      "id": "q04",
+      "chapterId": "ch01",
+      "type": "blank",
+      "question": "检验数大于 0 表示把对应非基变量增大时，目标函数会______。",
+      "answer": "变好",
+      "explain": "检验数就是该变量增加 1 单位带来的目标增量。"
+    },
+    {
+      "id": "q05",
+      "chapterId": "ch02",
+      "type": "single",
+      "question": "产销平衡运输问题的约束矩阵秩为",
+      "options": [
+        "m + n",
+        "m + n − 1",
+        "mn",
+        "mn − 1"
+      ],
+      "answer": 1,
+      "explain": "m+n 个方程中有一组线性相关，因为总供给等于总需求。"
+    },
+    {
+      "id": "q06",
+      "chapterId": "ch02",
+      "type": "single",
+      "question": "匈牙利算法每一轮的核心动作是",
+      "options": [
+        "随机重排矩阵",
+        "行减最小值、列减最小值，再用最少直线覆盖零",
+        "直接取每行最大元素",
+        "求矩阵的逆"
+      ],
+      "answer": 1,
+      "explain": "减出零、覆盖零、找最小未覆盖元素补差，直到能选出 n 个互不同行同列的零。"
+    },
+    {
+      "id": "q07",
+      "chapterId": "ch03",
+      "type": "single",
+      "question": "对最大化问题，LP 松弛的最优值相对于整数最优值",
+      "options": [
+        "更小",
+        "更大或相等，是上界",
+        "一定相等",
+        "无法比较"
+      ],
+      "answer": 1,
+      "explain": "松弛扩大了可行域，最大值只会变大或不变，因此是剪枝依据。"
+    },
+    {
+      "id": "q08",
+      "chapterId": "ch03",
+      "type": "blank",
+      "question": "Gomory 割平面切掉的只是当前的______顶点，不切掉任何整数可行解。",
+      "answer": "分数",
+      "explain": "割由右端项为分数的那一行推出，所有整数解都满足。"
+    },
+    {
+      "id": "q09",
+      "chapterId": "ch04",
+      "type": "single",
+      "question": "最大流最小割定理说的是",
+      "options": [
+        "最大流等于所有边容量之和",
+        "最大流的值等于最小割的容量",
+        "最大流等于最短路径长度",
+        "最小割等于顶点数"
+      ],
+      "answer": 1,
+      "explain": "网络优化最核心的对偶结论：maxflow = mincut。"
+    },
+    {
+      "id": "q10",
+      "chapterId": "ch04",
+      "type": "single",
+      "question": "匹配 M 是最大匹配的充要条件是",
+      "options": [
+        "M 的边数等于顶点数的一半",
+        "不存在增广路",
+        "每条边权相等",
+        "图是二分图"
+      ],
+      "answer": 1,
+      "explain": "Berge 定理：有增广路就能翻转出更大的匹配。"
+    },
+    {
+      "id": "q11",
+      "chapterId": "ch05",
+      "type": "single",
+      "question": "要证明问题 B 是 NP-完全的，归约方向是",
+      "options": [
+        "把 B 改写成 A",
+        "把已知 NP-完全的 A 改写成 B",
+        "任选方向都行",
+        "不需要归约"
+      ],
+      "answer": 1,
+      "explain": "要说明 B 至少和 A 一样难，须把已知难的 A 归约到 B。"
+    },
+    {
+      "id": "q12",
+      "chapterId": "ch05",
+      "type": "blank",
+      "question": "强 NP-完全问题不存在______时间算法（在 P 不等于 NP 的前提下）。",
+      "answer": "伪多项式",
+      "explain": "定理 5.2，这也是背包有 O(nC) 的 DP 而 TSP 与装箱没有的原因。"
+    },
+    {
+      "id": "q13",
+      "chapterId": "ch06",
+      "type": "single",
+      "question": "单机、无约束、最小化总完工时间的最优算法是",
+      "options": [
+        "EDD",
+        "SPT",
+        "LPT",
+        "Johnson 规则"
+      ],
+      "answer": 1,
+      "explain": "按加工时间从短到长排，交换论证可证。"
+    },
+    {
+      "id": "q14",
+      "chapterId": "ch06",
+      "type": "blank",
+      "question": "P 台同型并行机上 LPT 的最坏情况界是______。",
+      "answer": "4/3 − 1/(3m)",
+      "explain": "Graham 1969 的结论；LS 的界是 2 − 1/m，两者常被混淆。"
+    },
+    {
+      "id": "q15",
+      "chapterId": "ch07",
+      "type": "single",
+      "question": "在线算法的竞争比定义为",
+      "options": [
+        "平均花费与最优花费之比",
+        "所有输入序列上花费与离线最优之比的上确界",
+        "最坏情况下的绝对花费",
+        "运行时间与输入规模之比"
+      ],
+      "answer": 1,
+      "explain": "竞争比取上确界，衡量最坏情况下的相对代价。"
+    },
+    {
+      "id": "q16",
+      "chapterId": "ch07",
+      "type": "blank",
+      "question": "滑雪租赁问题（租 1 元每次、买 N 元）的确定性最优竞争比是______。",
+      "answer": "2 − 1/N",
+      "explain": "先租 N−1 次再买，最坏花费 2N−1，与最优 N 的比值。"
+    },
+    {
+      "id": "q17",
+      "chapterId": "ch08",
+      "type": "single",
+      "question": "Nash 均衡的判据是",
+      "options": [
+        "所有人收益之和最大",
+        "没有任何人能单方面改变策略而获益",
+        "所有人收益相等",
+        "存在鞍点"
+      ],
+      "answer": 1,
+      "explain": "均衡只要求单方面改不动，不要求整体最优。"
+    },
+    {
+      "id": "q18",
+      "chapterId": "ch08",
+      "type": "blank",
+      "question": "Cournot 模型中两家企业成本相同、需求为最高价减去总产量，均衡产量为______。",
+      "answer": "(M − c)/3",
+      "explain": "由反应函数解 3q = M − c 得到。"
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "f01",
+      "chapterId": "ch00",
+      "front": "优化的三件套是什么？",
+      "back": "决策变量、目标函数、约束条件",
+      "tags": [
+        "基础",
+        "建模"
+      ]
+    },
+    {
+      "id": "f02",
+      "chapterId": "ch00",
+      "front": "可行解、可行域、最优解、最优值分别指什么？",
+      "back": "满足约束的一组取值 / 所有可行解构成的集合 / 让目标最好的取值 / 最优解对应的目标数值",
+      "tags": [
+        "基础",
+        "术语"
+      ]
+    },
+    {
+      "id": "f03",
+      "chapterId": "ch00",
+      "front": "为什么局部最优不一定是全局最优？",
+      "back": "可行域可能有多个峰，只看邻域会停在矮的那座",
+      "tags": [
+        "基础",
+        "误解"
+      ]
+    },
+    {
+      "id": "f04",
+      "chapterId": "ch01",
+      "front": "线性规划标准形的四个条件？",
+      "back": "最大化、约束全为等式、变量全非负、右端项非负",
+      "tags": [
+        "线性规划",
+        "标准形"
+      ]
+    },
+    {
+      "id": "f05",
+      "chapterId": "ch01",
+      "front": "为什么最优解一定能在顶点找到？",
+      "back": "目标函数线性，沿可行方向移动不变差，直到撞到边界；顶点对应基本可行解",
+      "tags": [
+        "线性规划",
+        "核心结论"
+      ]
+    },
+    {
+      "id": "f06",
+      "chapterId": "ch01",
+      "front": "影子价格是什么？",
+      "back": "某种资源增加 1 单位时最优目标的增量，等于对偶变量的值",
+      "tags": [
+        "对偶",
+        "经济解释"
+      ]
+    },
+    {
+      "id": "f07",
+      "chapterId": "ch02",
+      "front": "产销平衡运输问题的约束矩阵秩是多少？",
+      "back": "m + n − 1，因为总供给等于总需求带来一个线性相关",
+      "tags": [
+        "运输",
+        "结构"
+      ]
+    },
+    {
+      "id": "f08",
+      "chapterId": "ch02",
+      "front": "位势法里检验数怎么算？",
+      "back": "边费用减去行位势与列位势之和，全不小于 0 时当前方案最优",
+      "tags": [
+        "运输",
+        "检验"
+      ]
+    },
+    {
+      "id": "f09",
+      "chapterId": "ch02",
+      "front": "什么叫全么模，为什么重要？",
+      "back": "所有方子阵行列式为 0 或正负 1，保证顶点为整数，LP 解可直接当整数解",
+      "tags": [
+        "全么模",
+        "整数性"
+      ]
+    },
+    {
+      "id": "f10",
+      "chapterId": "ch03",
+      "front": "为什么不能把 LP 松弛解直接取整？",
+      "back": "可能不可行，也可能离最优很远（(2,3) 只有 −168，真最优 −198）",
+      "tags": [
+        "整数规划",
+        "误解"
+      ]
+    },
+    {
+      "id": "f11",
+      "chapterId": "ch03",
+      "front": "分枝定界靠什么剪枝？",
+      "back": "子问题的 LP 上界已不如手上最好的整数解时，整支剪掉",
+      "tags": [
+        "分枝定界",
+        "剪枝"
+      ]
+    },
+    {
+      "id": "f12",
+      "chapterId": "ch03",
+      "front": "整数间隙是什么？",
+      "back": "LP 松弛最优值与整数最优值之差，衡量松弛有多松",
+      "tags": [
+        "整数规划",
+        "概念"
+      ]
+    },
+    {
+      "id": "f13",
+      "chapterId": "ch04",
+      "front": "Berge 定理说什么？",
+      "back": "匹配最大当且仅当不存在增广路",
+      "tags": [
+        "匹配",
+        "判据"
+      ]
+    },
+    {
+      "id": "f14",
+      "chapterId": "ch04",
+      "front": "Kruskal 与 Dijkstra 的区别？",
+      "back": "前者求连通所有点的最小生成树，按边权挑不成圈的边；后者求单源最短路，按距离扩展",
+      "tags": [
+        "图",
+        "算法"
+      ]
+    },
+    {
+      "id": "f15",
+      "chapterId": "ch04",
+      "front": "最大流最小割定理？",
+      "back": "源到汇的最大流量等于分开源汇的最小割容量",
+      "tags": [
+        "网络流",
+        "对偶"
+      ]
+    },
+    {
+      "id": "f16",
+      "chapterId": "ch05",
+      "front": "P、NP、NP-完全、NP-难怎么区分？",
+      "back": "P 多项式可解；NP 解可多项式验证；NP-完全在 NP 内且所有 NP 可归约到它；NP-难只需所有 NP 可归约到它",
+      "tags": [
+        "复杂度",
+        "四盒"
+      ]
+    },
+    {
+      "id": "f17",
+      "chapterId": "ch05",
+      "front": "归约的方向怎么定？",
+      "back": "把已知 NP-完全的问题 A 改写成待证问题 B",
+      "tags": [
+        "归约",
+        "易错"
+      ]
+    },
+    {
+      "id": "f18",
+      "chapterId": "ch05",
+      "front": "强 NP-完全与一般 NP-完全的区别？",
+      "back": "前者的数值被规模多项式界住，故无伪多项式算法；背包是一般意义，TSP 与装箱是强",
+      "tags": [
+        "复杂度",
+        "强NPC"
+      ]
+    },
+    {
+      "id": "f19",
+      "chapterId": "ch06",
+      "front": "α、β、γ 三段各写什么？",
+      "back": "机器环境 / 工件特征 / 目标函数",
+      "tags": [
+        "排序",
+        "记法"
+      ]
+    },
+    {
+      "id": "f20",
+      "chapterId": "ch06",
+      "front": "最小化总完工时间与最小化最大延迟各用什么规则？",
+      "back": "前者用 SPT 短优先，后者用 EDD 交工期早优先",
+      "tags": [
+        "排序",
+        "规则"
+      ]
+    },
+    {
+      "id": "f21",
+      "chapterId": "ch06",
+      "front": "NF、FF、BF、FFD 的区别？",
+      "back": "只看最后一只箱 / 从头找第一个装得下 / 找剩余最小的 / 先大后小再 FF",
+      "tags": [
+        "装箱",
+        "算法"
+      ]
+    },
+    {
+      "id": "f22",
+      "chapterId": "ch07",
+      "front": "竞争比怎么定义？",
+      "back": "所有输入序列上在线花费与离线最优之比的上确界",
+      "tags": [
+        "在线",
+        "指标"
+      ]
+    },
+    {
+      "id": "f23",
+      "chapterId": "ch07",
+      "front": "滑雪租赁的最优竞争比？",
+      "back": "2 − 1/N；随机化可到 e/(e−1) 约 1.58",
+      "tags": [
+        "在线",
+        "经典"
+      ]
+    },
+    {
+      "id": "f24",
+      "chapterId": "ch07",
+      "front": "Paging 与 k-server 什么关系？",
+      "back": "Paging 是 k-server 的特例；LRU 与 FIFO 竞争比 k，工作函数算法 2k−1，下界 k",
+      "tags": [
+        "在线",
+        "缓存"
+      ]
+    },
+    {
+      "id": "f25",
+      "chapterId": "ch08",
+      "front": "零和博弈什么时候有纯策略解？",
+      "back": "max-min 等于 min-max 时，公共值即博弈的值，对应鞍点",
+      "tags": [
+        "博弈",
+        "零和"
+      ]
+    },
+    {
+      "id": "f26",
+      "chapterId": "ch08",
+      "front": "Nash 均衡的判据一句话？",
+      "back": "没有任何参与者能单方面改变策略而提高收益",
+      "tags": [
+        "博弈",
+        "核心"
+      ]
+    },
+    {
+      "id": "f27",
+      "chapterId": "ch08",
+      "front": "Cournot、Bertrand、Hotelling 各均衡在哪？",
+      "back": "产量 (M−c)/3；价格压到成本 c；两家位置挤中点，三家无纯策略均衡",
+      "tags": [
+        "博弈",
+        "模型"
+      ]
+    }
+  ],
+  "companion": "组合优化与博弈论学习伴侣.html"
+}

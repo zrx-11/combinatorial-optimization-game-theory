@@ -1,0 +1,87 @@
+[
+ {
+  "check": "首页渲染",
+  "pass": true,
+  "extra": ""
+ },
+ {
+  "check": "书卡数量",
+  "pass": true,
+  "extra": "1/1"
+ },
+ {
+  "check": "总览页：总览",
+  "pass": true,
+  "extra": "233 字符"
+ },
+ {
+  "check": "combinatorial-optimization-and-game-theory 首章渲染",
+  "pass": true,
+  "extra": "4450 字符"
+ },
+ {
+  "check": "combinatorial-optimization-and-game-theory 末章渲染",
+  "pass": true,
+  "extra": "7257 字符"
+ },
+ {
+  "check": "combinatorial-optimization-and-game-theory 测验题数",
+  "pass": true,
+  "extra": "18 题"
+ },
+ {
+  "check": "combinatorial-optimization-and-game-theory 测验正确反馈",
+  "pass": true,
+  "extra": "✓ 正确"
+ },
+ {
+  "check": "combinatorial-optimization-and-game-theory 测验解析",
+  "pass": true,
+  "extra": ""
+ },
+ {
+  "check": "抽认卡正面有内容",
+  "pass": true,
+  "extra": "优化的三件套是什么？"
+ },
+ {
+  "check": "抽认卡翻转",
+  "pass": true,
+  "extra": ""
+ },
+ {
+  "check": "认识计数增加",
+  "pass": true,
+  "extra": "1"
+ },
+ {
+  "check": "术语表过滤",
+  "pass": true,
+  "extra": "共56 过滤后1（决策变量）"
+ },
+ {
+  "check": "全局搜索命中",
+  "pass": true,
+  "extra": "3 条"
+ },
+ {
+  "check": "进度跨刷新持久",
+  "pass": true,
+  "extra": "《组合优化与博弈论》 进度 33% · 已学 3/9 章 → 《组合优化与博弈论》 进度 33% · 已学 3/9 章"
+ },
+ {
+  "check": "学习路径完成标记",
+  "pass": true,
+  "extra": ""
+ },
+ {
+  "check": "深色模式",
+  "pass": true,
+  "extra": ""
+ },
+ {
+  "check": "控制台无错误",
+  "pass": true,
+  "extra": ""
+ }
+]
